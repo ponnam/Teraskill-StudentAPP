@@ -23,7 +23,15 @@ This project is perfect for teaching:
 
 ## 🏗 Project Structure
 
-<img width="289" height="268" alt="image" src="https://github.com/user-attachments/assets/b9e33358-60d0-48ef-9a5e-d226b9967933" />
+- Teraskill-StudentAPP/
+  - docker-compose.yml
+  - mysql/
+    - init.sql
+  - php/
+    - db.php
+    - index.php
+    - add.php
+    - view.php
 
 
 ---
