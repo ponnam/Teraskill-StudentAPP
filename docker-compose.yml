@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  php-app:
+    image: php:8.2-apache
+    container_name: php-app
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql-db
+    volumes:
+      - ./php:/var/www/html
+    command: /bin/bash -c "docker-php-ext-install mysqli && apache2-foreground"
+
+  mysql-db:
+    image: mysql:8
+    container_name: mysql-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: studentdb
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  mysql_data:
