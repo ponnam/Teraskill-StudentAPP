@@ -23,18 +23,7 @@ This project is perfect for teaching:
 
 ## 🏗 Project Structure
 
-student-app/
-│
-├── docker-compose.yml
-│
-├── mysql/
-│ └── init.sql
-│
-└── php/
-├── index.php
-├── add.php
-├── view.php
-└── db.php
+<img width="289" height="268" alt="image" src="https://github.com/user-attachments/assets/b9e33358-60d0-48ef-9a5e-d226b9967933" />
 
 
 ---
@@ -47,5 +36,5 @@ docker compose up -d
 
 ### 🌐 Access the Web App
 
-http://localhost:8080
+http://IPAddress:8080
 
